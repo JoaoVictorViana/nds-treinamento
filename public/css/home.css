@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+}
+
+.MainContent {
+    display: flex;
+}
+
+
+/*
+ * Css da Sidebar
+ */
+
+.Sidebar {
+    background-color: #006D44;
+    display: flex;
+    flex-direction: column;
+    /* width: 23vw; */
+    padding: 10px 0;
+}
+
+
+.SidebarItem {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2vw;
+    align-items: center;
+    color: #fafafa;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 0 1vw;
+    height: 6vh;
+    border-left: 5px solid #006D44;
+}
+
+.SidebarItemClosed {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2vw;
+    align-items: center;
+    color: #fafafa;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 0 1vw;
+    height: 6vh;
+    border-left: 5px solid #006D44;
+}
+
+.SidebarItem:hover, .DropdownItem:hover {
+    border-left: #34483F 5px solid;
+    background-color: #fafafa;
+    color: rgb(53, 50, 50);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.SidebarText {
+    font-size: 20px;
+    width: 140px;
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.Dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.DropdownList {
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0;
+}
+
+.DropdownItem {
+    display: flex;
+    align-items: center;
+    color: #fafafa;
+    text-decoration: none;
+    margin: 0 10px;
+    height: 5vh;
+    padding-left: 6vw ;
+    border-left: 5px solid #006D44;
+}
+
+.SidebarItem:hover .SidebarArrow {
+    filter: invert(0);
+}
+
+.SidebarArrow {
+    height: 10px;
+    filter: invert(1);
+    transform: rotate(0);
+}
+
+.DropdownWrap {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/*
+ * Css do Container
+ */
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*
+ * Css da Navbar
+ */
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+    background-color: #34483F;
+    align-items: center;
+    padding: 0 1vw;
+}
+
+.NavbarLink {
+    margin-right: 1vw;
+}
+
+
+/*
+ * Css da Dashboard
+ */
+
+.Dash {
+    margin: 1vw;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    height: 100%;
+}
+
+
+/*
+ * Css de eventos
+ */
+
+.Hidden {
+    display: none;
+}
+
+.Center {
+    justify-content: center;
+    border: none;
+}
+
+.Rotate {
+    transform: rotate(90deg);
+}
